@@ -1,0 +1,14 @@
+$(function(){
+  $("[data-toggle=collapse]").click(function(e){
+    $(e.target).next().slideToggle(300);
+    $(e.target).next().siblings(".content").slideUp(300);
+  })
+  $("p.mask").hover(
+    function(e){     
+      $(e.target).prev().css("transform","rotateY(0deg")
+    },
+    function(e){
+      $(e.target).prev().css("transform","rotateY(90deg")
+    }
+  )
+})

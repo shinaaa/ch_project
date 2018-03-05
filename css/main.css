@@ -1,0 +1,21 @@
+div,p,h1,h2,h3,h4,h5,h6,dl,dt,ul,ol,li{
+  box-sizing:border-box;
+  list-style:none;
+  margin:0;
+  padding:0
+}
+body{
+  background: url('../img/logo/bg.png')
+}
+a{
+  color:#000;
+  transition:all .3s linear;
+}
+a:hover{
+  text-decoration: none;
+  color:#339966
+}
+h1,h2,h3,h4{
+  font-family: 'Metamorphous', cursive;
+  color:#663300
+}

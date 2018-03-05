@@ -1,0 +1,139 @@
+.banner{
+  width:100%;
+  height:500px;
+  background:url('../img/banner/banner5.jpg') no-repeat 15% 0;
+  overflow:hidden;
+  position: relative
+}
+.banner>img{
+  position: absolute;
+  top:-30px;
+}
+@media (max-width:1300px){
+  .banner>img{
+    left:-300px
+  }
+}
+
+.contact{
+  margin:50px 0;
+}
+.contact h3{
+  margin:20px 0;
+}
+.contact .form input,.contact .form textarea{
+  border-radius:5px;
+  border:1px solid #302E2E;
+  padding:2px 0 2px 8px;
+  font-size:1.2em;
+}
+.contact .form input{
+  width:60%;
+  height:3em;
+  margin:0 0 20px 0;
+}
+.contact .form textarea{
+  width:80%;
+  resize:none;
+  height:200px;
+}
+.form span{
+  font-size:1.8em;
+  color:red;
+}
+.contact .form input:focus,.contact .form textarea:focus{
+  outline:none;
+}
+@media (max-width:768px){
+  .contact .form input{
+    width:95%
+  }
+  .contact .form textarea{
+    width:95%
+  }
+}
+.rate-us>p,.rate-us>ul,.rate-us>ul>li{
+  float:left;
+}
+.rate-us>p{
+  font-size:1.2em;
+  margin:0 10px 0 0;
+}
+.rate-us{
+  overflow:hidden;
+  margin:20px 0;
+}
+.rate-us>ul>li{
+  width:20px;
+  height:20px;
+  margin:0 5px 0 0;
+  border:1px solid #444;
+  border-radius:50%;
+}
+.rate-us>ul>li:hover{
+  cursor: pointer;
+}
+i.msgSend{
+  position:absolute;
+  bottom:-5px;left:160px;
+  opacity:0;
+  transition:all .1s linear
+}
+.online{
+  color:#fff;  
+  display:none;
+  position:fixed;
+  right:0;
+  top:300px; 
+  animation:jump 200ms linear 0ms infinite;
+}
+.online>p{
+  width:55px;
+  padding:3px;
+  cursor: pointer;
+  background:#444;
+  border-radius:5px;
+}
+.online>span{
+  position:absolute;
+  top:-5px;right:1px;
+  cursor: pointer;
+}
+@keyframes jump{
+  0%{top:302px}
+  100%{top:300px}
+}
+.online-contact{
+  position:fixed;
+  right:0;
+  top:355px;
+  display:none;
+}
+.online-contact>ul{
+  width:45px;
+  min-height:100px;
+}
+.online-contact>ul>li{
+  cursor: pointer;
+  margin:10px 0;
+}
+ul>li.qq{
+  width:100%;
+  height:35px;
+  background:url('../img/logo/qq.jpg') no-repeat;
+  background-size:28px;
+  margin:0 0 5px 0;
+}
+ul>li.phone{
+  width:100%;
+  height:26px;
+  background:url('../img/logo/phone.png') no-repeat;
+  background-size:30px
+}
+ul>li.skype{
+  width:100%;
+  height:30px;
+  background:url('../img/logo/skype.jpg') no-repeat;
+  background-size:25px;
+  background-position:5px 0;
+}
